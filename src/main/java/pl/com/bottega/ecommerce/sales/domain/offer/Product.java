@@ -11,12 +11,12 @@ public class Product {
 
     private Money price;
 
-    public Product(String id, String name, String type, Date snapshotDate, BigDecimal amount, String currency) {
+    public Product(String id, String name, String type, Date snapshotDate, Money price) {
         this.id = id;
         this.name = name;
         this.type = type;
         this.snapshotDate = snapshotDate;
-        this.price = new Money(amount, currency);
+        this.price = price;
     }
 
     public String getId() {
